@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daya Tahan Pangan di Provinsi Riau</title>
+        <meta charest = "utf-8" />
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <style>
+            ul {
+                float: left;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #fffafa;
+            }
+            li {
+                float: left;
+            }
+            li b:hover {float : right}
+
+             li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: black;
+            }
+            
+            .paragraf1 { width: 20%;}
+            .paragraf2 { width: 20%;}
+            .paragraf3 { width: 20%;}
+            li {
+                float: left;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style ="background-color: rgb(18, 115, 29);">
+            <h1 style="color:white; Text-align:center;"><br>Daya Tahan Pangan di Provinsi Riau</h1>
+            <ul style="background-color: #333333;color:rgb(255, 255, 255);">
+                <li><br>Di bawah ini merupakan ketahanan pangan tiap Kabupaten yang ada di Provinsi Riau. Beberapa Kabupaten masih terkategori defisit hanya satu Kabupaten yang terkategori surplus dan satu Kabupaten yang terkategori imbang daya tahan pangannya. Sebelum kita melihat daya tahan pangan di Provinsi Riau mari kita mengenal sedikit seputar Riau.<br><br></li>
+            </ul>
+            <div style ="background-color: rgb(18, 115, 29);"></div>
+            <h1 style="color:white; Text-align:center;">Sekilas Seputar Provinsi Riau.</h1>
+            <h2 style="color:white; Text-align:left;">Riau.</h2>
+            <p style="color:white; text-align:justify;">Riau adalah sebuah provinsi di Indonesia yang terletak di bagian tengah pantai timur pulau Sumatra. Wilayah pesisirnya berbatasan dengan Selat Malaka. Hingga tahun 2004, provinsi ini juga meliputi Kepulauan Riau, sekelompok besar pulau-pulau kecil (pulau-pulau utamanya antara lain Pulau Batam dan Pulau Bintan) yang terletak di sebelah Timur Sumatra dan sebelah Selatan Singapura. Kepulauan ini dimekarkan menjadi provinsi tersendiri pada Juli 2004. Ibu kota dan kota terbesar Riau adalah Pekanbaru, dan kota besar lainnya adalah kota Dumai. Berdasarkan hasil Badan Pusat Statistik Riau tahun 2022, penduduk provinsi Riau berjumlah 6.493.603 jiwa, dengan kepadatan penduduk 75 jiwa/km².
+                Riau saat ini merupakan salah satu provinsi terkaya di Indonesia, dan sumber dayanya didominasi oleh sumber alam, terutama minyak bumi, gas alam, karet, kelapa sawit dan perkebunan serat. Tetapi, penebangan hutan yang merajalela telah mengurangi luas hutan secara signifikan, dari 78% pada 1982 menjadi hanya 33% pada 2005. Rata-rata 160.000 hektare hutan habis ditebang setiap tahun, meninggalkan 22%, atau 2,45 juta hektare pada tahun 2009. Deforestasi dengan tujuan pembukaan kebun-kebun kelapa sawit dan produksi kertas telah menyebabkan kabut asap yang sangat mengganggu di provinsi ini selama bertahun-tahun, dan menjalar ke negara-negara tetangga seperti Malaysia dan Singapura. </p>
+                <h2 style="color:white; Text-align:left;">Etimologi.</h2>
+                <p style="color:white; text-align:justify;">Ada tiga kemungkinan asal kata riau yang menjadi nama provinsi ini. Pertama, dari kata Portugis, rio berarti sungai. Pada tahun 1514, terdapat sebuah ekspedisi militer Portugis yang menelusuri Sungai Siak, dengan tujuan mencari lokasi sebuah kerajaan yang diyakini mereka ada pada kawasan tersebut, dan sekaligus mengejar pengikut Sultan Mahmud Syah yang melarikan diri setelah kejatuhan Kesultanan Malaka.
+                Versi kedua menyebutkan bahwa riau berasal dari kata riahi yang berarti air laut. Kata ini diduga berasal dari tokoh Sinbad al-Bahar dalam kitab Seribu Satu Malam, dan versi ketiga menyebutkan bahwa kata ini berasal dari penuturan masyarakat setempat, diangkat dari kata rioh atau riuh, yang berarti ramai, hiruk pikuk orang bekerja.</p>
+                <h2 style="color:white; Text-align:left;">Geografis.</h2>
+                <p style="color:white; text-align:justify;"> Luas wilayah provinsi Riau adalah 87.023,66 km², yang membentang dari lereng Bukit Barisan hingga Selat Malaka. Riau memiliki iklim tropis basah dengan rata-rata curah hujan berkisar antara 2000-3000 milimeter per tahun, serta rata-rata hujan per tahun sekitar 160 hari. </p>
+               
+                <script>
+                    var map = L.map('map').setView([0.5009793911373736, 101.58906707678388], 8);
+                    L.tileLayer("https://qgiscloud.com/GustiBagus/UTS_FIX_WEB/?l=desil_2_riau_140020190618200517%5B84%5D%2CBasemap%202&bl=mapnik&t=UTS_FIX_WEB&e=10085671%2C-413350%2C12117671%2C578837").addTo(map);
+                </script>
+
+                <div class="clear"></div>
+                <div class="footer">
+                <p style="background-color:#333333;color:white; text-align:center;"><br>Berikut ini merupakan peta sebaran daya tahan pangan di Provinsi Riau<br><br></P>
+        </div>
+        </div>
+
+
+
+
+
+        <table class="table table-bordered table-striped table-hover">
+            <tr>
+                <td><td></td><div id="map" style="width:1080px; height:580px"></td><td><p style="width:1400"></td>
+            </tr>
+            
+            <tr>
+                <td><td></td><td>LEGENDA</td><td>Dibuat Oleh</td><td><p style ="color:white">Dosen Pengampu</p></td><td>Dosen Pengampu</td>
+            </tr>
+
+            <tr>
+                <td><img src="https://docs.qgis.org/3.4/en/_images/boundary_polygon.png"width="60"height="30"></td><td>Polygon</td><td></td><td>Nama : Gusti Bagus Jatmiko Aji</td><td></td><td>Hidayat Panuntun, ST, M.Eng., D.Sc</td>
+            </tr>
+            
+            <tr>
+                <td></td><td></td><td></td><td>NIM : 20/457283/SV/17730</td>
+            </tr>
+
+            <li><img src="https://rekammedis.sv.ugm.ac.id/wp-content/uploads/sites/780/2020/10/Logo-Tengah-Stack-Up-1-768x768.jpg"width="200"height="200"></li> 
+
+            <tr>
+                <td></td><td><p style="color:white">Nama</p></td><td><p style="color:white">Gusti Bagus Jatmiko Aji</p></td>
+            </tr>
+            
+            <script>
+                var map = L.map('map').setView([0.5009793911373736, 101.58906707678388], 8);
+                L.tileLayer("https://qgiscloud.com/JatmikoAji/UTS_FIX_WEB/?l=desil_2_riau_140020190618200517&bl=mapnik&t=UTS_FIX_WEB&e=10915711%2C-130821%2C11728511%2C266054").addTo(map);
+            </script>
+        </table>
+
+        <div class="footer">
+            <p style="background-color:#333333;color:white; text-align:center;">Dibuat oleh : Gusti Bagus Jatmiko Aji<br>NIM : 20/457283/SV/17730</P>
+             
+    </body>
+</html>
